@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mi Página Web con GIF Condicionado</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        #gif-container {
+            display: none; /* Inicialmente oculta el contenedor del GIF */
+        }
+    </style>
 </head>
 <body>
 
     <h1>Mi Página Web</h1>
     
-    <audio controls autoplay>
+    <audio id="audio" controls autoplay>
         <source src="feid.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
-    <!-- Agrega la imagen con la etiqueta <img> -->
-    <img src="gato.gif" alt="Descripción de la imagen">
-    <!-- Agrega un elemento de audio con la etiqueta <audio> -->
+    
+    <!-- Contenedor del GIF -->
+    <div id="gif-container">
+        <img src="gato.gif" alt="Descripción de la imagen">
+    </div>
+
+    <script>
+        // Función para mostrar el GIF cuando se hace clic en el botón de reproducir el audio
+        document.getElementById('audio').addEventListener('play', function() {
+            document.getElementById('gif-container').style.display = 'block';
+        });
+    </script>
 
 </body>
 </html>

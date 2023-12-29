@@ -1,0 +1,228 @@
+
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: no-repeat;
+    color: antiquewhite;
+ 
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10%;
+}
+.container {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos secundarios se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos secundarios, proporcionando un espacio uniforme */
+    align-items: flex-start; /* Alinea los elementos secundarios al inicio del eje transversal (superior) */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+    padding-top: 0%; /* Agrega un espacio en la parte superior equivalente al 30% de la altura del contenedor */
+    cursor: crosshair; /* Establece el cursor al estilo de la cruz */
+
+}
+.box {
+    min-width: 20px; /* Establece un ancho mínimo para evitar que sean demasiado pequeños */
+    width: 49%; /* Establece el ancho de cada cuadro al 45% del ancho del contenedor principal */
+    height: 250px; /* Modifica la altura del cuadro a tu preferencia, por ejemplo, 150px */ 
+    margin: 5px 2px; /* Modifica el valor del margen horizontal según tu preferencia, por ejemplo, 5px en la parte superior e inferior y 10px en la derecha e izquierda */
+    border-radius: 8px; /* Establece un radio de borde de 8 píxeles para suavizar las esquinas */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y la altura totales del cuadro */
+    text-align: left; /* Alinea el texto a la izquierda dentro de cada cuadro */
+    padding: 20px; /* Agrega un relleno interno de 20 píxeles a cada cuadro */
+    background-color: rgba(87, 86, 86, 0.186);
+    box-shadow: 10px 10px 10px #00000028;
+    position: relative; /* Asegura que la posición de la imagen sea relativa al contenedor */
+}
+.box2 {
+    min-width: 200px; /* Establece un ancho mínimo para evitar que sean demasiado pequeños */
+    width: 49%;
+    height: 250px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 20px;  
+    background-color: rgba(87, 86, 86, 0.186);
+    box-shadow: 10px 10px 10px #00000028;
+}
+
+/* Estilos para el footer */
+footer {
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(87, 86, 86, 0.186);
+    box-shadow: 10px 10px 10px #00000028; /* Cambia el color de fondo según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 40px; /* Ajusta el espacio interno del footer según tus preferencias */
+    position: relative; /* Establece la posición relativa */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+    clear: both; /* Asegura que el footer se coloque después de los elementos flotantes */
+    margin-top: 20px; /* Agrega espacio entre box2 y el footer */
+    margin-bottom: 20px; /* Agrega espacio en la parte inferior de la página */
+}
+/*imagen*/
+.contenedor {
+    text-align: center;
+    margin: 10px;
+}
+.imagen {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/*Boton */
+.botton {
+    text-align: center;
+    margin-top: 20px; /* Agrega espacio entre el boton y los contenedores de arriba */
+    margin-bottom: 20px; /* Agrega espacio en la parte inferior de la página */
+}
+#change-temperature-button {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 19px;
+    background-color: rgba(87, 86, 86, 0.186);
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.9s;
+}
+   
+#change-temperature-button:hover {
+    box-shadow: 10px 10px 10px #ffffff;
+}
+   
+#change-temperature-button:active {
+    transform: scale(0.97);
+    box-shadow: 10px 10px 10px #ffffff;
+}
+/*Boton2*/
+#obtener-datos-button {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 19px;
+    background-color: rgba(87, 86, 86, 0.186);
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*pal movil*/
+@media (max-width: 768px) {
+/* Agrega tus estilos específicos para dispositivos móviles aquí */
+h1 {
+    font-size: 30px; /* Ejemplo de ajuste de tamaño de fuente para dispositivos móviles */
+    padding-top: 5%; /* Ejemplo de ajuste de estilo para dispositivos móviles */
+}
+.container {
+    padding-top: 5%; /* Ejemplo de ajuste de estilo para dispositivos móviles */
+}
+.box, .box2 {
+  width: 100%; /* Ejemplo de ajuste de ancho para dispositivos móviles */
+ }
+}
+
+.nube {
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+    float: right; /* Coloca la imagen a la derecha */
+    margin-left: 10px;
+    margin-right: 50px;
+}
+/* interruptor, el cuadro alrededor del control deslizante */
+.switch {
+    font-size: 17px;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    animation: toggle__animation 3s infinite;
+}
+  
+.switch::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(20px);
+    z-index: -1;
+    border-radius: 50px;
+    background-color: #d8ff99;
+    background-image: radial-gradient(at 21% 46%, hsla(183,65%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 23% 25%, hsla(359,74%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 20% 1%, hsla(267,83%,75%,1) 0px, transparent 50%),
+    radial-gradient(at 86% 87%, hsla(204,69%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 99% 41%, hsla(171,72%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 55% 24%, hsla(138,60%,62%,1) 0px, transparent 50%);
+}
+  
+/* Ocultar casilla de verificación HTML predeterminada */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fdfefedc;
+    transition: .4s;
+    border-radius: 30px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.35em;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -10px 10px 0px inset,
+       rgba(0, 0, 0, 0.09) 0px -1px 15px -8px;
+    background-color: #ff99fd;
+    background-image: radial-gradient(at 81% 39%, hsla(327,79%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 11% 72%, hsla(264,64%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 23% 20%, hsla(75,98%,71%,1) 0px, transparent 50%);
+}
+  
+.input__check:checked + .slider {
+    background-color: #17202A;
+}
+  
+.input__check:checked + .slider:before {
+    transform: translateX(1.5em);
+}
+  
+@keyframes toggle__animation {
+    0%, 100% {
+      transform: translateY(-10px) rotateX(15deg) rotateY(-20deg);
+    }
+  
+    50% {
+      transform: translateY(0px) rotateX(15deg) rotateY(-20deg);
+    }
+}
